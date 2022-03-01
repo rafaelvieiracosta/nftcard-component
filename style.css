@@ -22,10 +22,11 @@ a {
   position: relative;
   cursor: pointer;
   max-height: 302px;
-  transition: 10s;
 }
 
-.image:hover::after {
+.image::after {
+  transition: .4s;
+  opacity: 0;
   content: "";
   position: absolute;
   width: 100%;
@@ -38,6 +39,10 @@ a {
   left: 0;
   border-radius: 7px;
 }
+
+.image:hover::after{
+  opacity: 100;
+ }
 
 .image img {
   max-width: 100%;
@@ -60,7 +65,7 @@ main h1 {
   letter-spacing: 0.015rem;
   margin-top: 24px;
   color: #f5f7fa;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 main h1:hover {
@@ -118,7 +123,7 @@ main > p {
 
 .autor a {
   color: #f5f7fa;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .autor a:hover {
